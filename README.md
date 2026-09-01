@@ -11,6 +11,7 @@ Max-Cut 등 NP-hard 조합 최적화 문제를 고속으로 해결하기 위한 
 
 본 프로젝트는 Max-Cut 등 NP-hard 조합 최적화 문제를 고속으로 해결하기 위한 FPGA 기반 이징 머신(Ising Machine) 하드웨어 가속기 설계입니다.
 기존 폰노이만 구조에서 발생하는 메모리 대역폭 한계를 극복하기 위해 Incremental Local-Field Update 아키텍처를 도입하였으며, 알고리즘이 Local Minimum에 빠지는 현상을 방지하기 위해 칩 내부의 물리적 열 잡음(Thermal Noise)을 활용한 하이브리드 RO-TRNG를 자체 설계중입니다.
+(1단계 : LFSR, 2단계 : RO-TRNG, 3단계 : MRAM_TRNG)
 
 ## 🔑 Key Architectures & Optimizations
 
